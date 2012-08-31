@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" >
+	
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+	    
+	    <Button android:id="@+id/profile"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/profile" />
+	    
+	    <Button android:id="@+id/records"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/records" />
+	    
+	    <Button android:id="@+id/leaderboard"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/leaderboard" />
+	    
+	    <Button android:id="@+id/settings"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/settings" />
+	    
+	    <!--<ImageView
+		    android:id="@+id/JasonAndOwl"
+		    android:src="@drawable/jason_and_owl"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" />-->
+	</LinearLayout>
+	
+	<!--<ImageView
+		android:id="@+id/JasonAndOwl"
+		android:src="@drawable/jason_and_owl"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:visibility="gone" />-->
+	<!--<View
+    	android:layout_height="2dip"
+    	android:background="#0000FF" />-->
+	<ListView
+		android:id="@android:id/list"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:drawSelectorOnTop="false" />
+</LinearLayout>	
