@@ -13,8 +13,4 @@ bin/
 gen/
 
 # Local configuration file (sdk path, etc)
-<<<<<<< HEAD
 local.properties
-=======
-local.properties
->>>>>>> 863ff6b92a249dd22f0960f19e7aad07dbd24a64
