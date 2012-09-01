@@ -2,6 +2,7 @@ package me.inrecordti;
 
 import android.app.Activity;
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -10,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
-public class InRecordTimeActivity extends ListActivity {
+public class InRecordTimeActivity extends Activity {
 	private static final String[] data = {"lorem", "ipsum", "dolor",
         "sit", "amet",
         "consectetuer", "adipiscing", "elit", "morbi", "vel",
@@ -28,14 +29,14 @@ public class InRecordTimeActivity extends ListActivity {
     @Override
     public void onCreate (Bundle savedInstanceState) {
         super.onCreate (savedInstanceState);
-        setContentView (R.layout.profile);
+        setContentView (R.layout.main);
         
         profileBtn = (Button) findViewById (R.id.profile);
         recordsBtn = (Button) findViewById (R.id.records);
         leaderboardBtn = (Button) findViewById (R.id.leaderboard);
         settingsBtn = (Button) findViewById (R.id.settings);
         
-        profileBtn.setOnClickListener (new View.OnClickListener() {
+        /*profileBtn.setOnClickListener (new View.OnClickListener() {
 
         	@Override
         	public void onClick(View v) {
@@ -56,16 +57,18 @@ public class InRecordTimeActivity extends ListActivity {
         		InRecordTimeActivity.this.setListAdapter (adapter);
             }
         });
-        
+        */
         settingsBtn.setOnClickListener (new View.OnClickListener() {
 
         	@Override
         	public void onClick(View v) {
         		//InRecordTimeActivity.this.setContentView (R.layout.settings);
         		//ListView list = (ListView) findviewById (R.id.list);
-        		/*ImageView profilePic = (ImageView) findViewById (R.id.JasonAndOwl); //(R.drawable.jason_and_owl);
-        		profilePic.setVisibility (0);*/
-        		InRecordTimeActivity.this.setContentView (R.layout.settings);
+        		//ImageView profilePic = (ImageView) findViewById (R.id.JasonAndOwl); //(R.drawable.jason_and_owl);
+        		//profilePic.setVisibility (0);
+        		//InRecordTimeActivity.this.setContentView (R.layout.settings);
+        		Intent myIntent = new Intent (InRecordTimeActivity.this, SettingsActivity.class);
+        		InRecordTimeActivity.this.startActivity (myIntent);
         	}
         });
         
