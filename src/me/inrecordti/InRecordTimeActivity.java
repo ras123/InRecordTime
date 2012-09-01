@@ -46,18 +46,20 @@ public class InRecordTimeActivity extends Activity {
         		InRecordTimeActivity.this.setListAdapter (adapter);
             }
         });
-        
+        */
         recordsBtn.setOnClickListener (new View.OnClickListener() {
 
         	@Override
         	public void onClick(View v) {
-        		ListAdapter adapter = new ArrayAdapter<String> (InRecordTimeActivity.this, 
+        		/*ListAdapter adapter = new ArrayAdapter<String> (InRecordTimeActivity.this, 
                         										android.R.layout.simple_list_item_1, 
                         										records);
-        		InRecordTimeActivity.this.setListAdapter (adapter);
+        		InRecordTimeActivity.this.setListAdapter (adapter);*/
+        		Intent myIntent = new Intent (InRecordTimeActivity.this, RecordsActivity.class);
+        		InRecordTimeActivity.this.startActivity (myIntent);
             }
         });
-        */
+        
         settingsBtn.setOnClickListener (new View.OnClickListener() {
 
         	@Override

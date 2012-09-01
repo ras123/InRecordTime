@@ -18,6 +18,7 @@
             </intent-filter>
         </activity>
         
+        <activity android:name=".RecordsActivity" android:label="@string/records" />
         <activity android:name=".SettingsActivity" android:label="@string/settings" />
     </application>
 
